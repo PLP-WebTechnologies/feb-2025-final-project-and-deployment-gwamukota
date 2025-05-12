@@ -2,24 +2,19 @@
 
 ## Objectives
 Build a fully functional web application.
-Apply HTML, CSS, and JavaScript concepts learned.
-Deploy the project using GitHub Pages, Netlify, or Vercel.
+Used HTML, CSS, and JavaScript concepts learned.
+Deployed the project using GitHub Pages
 
-## Instructions
-Choose one of the following project ideas:
-Blog Website: Implement a multi-page site with navigation.
-Ecommerce Website: Implement a multi-page site with navigation.
+## Site Details
+Ecommerce Website: With Products and Cart
 
->[!NOTE]
-> - Include at least:
-> - A responsive design.
-> - JavaScript interactivity.
-> - A deployment link.
+## Future Enhancements
+Develop the Categories page to be more diverse and functional
+Improve the JS code for better functionality on all pages
+Improve the Cart functionality
+Improve general site responsiveness and asthetics
+Add functionalitiy to contact form
 
-## Tasks
 
-Create a well-structured HTML5 document.
-Use at least 5 different HTML elements.
-Ensure semantic correctness.
-
-Good luck and happy coding! 🚀💻
+## Site Url
+https://plp-webtechnologies.github.io/feb-2025-final-project-and-deployment-gwamukota/

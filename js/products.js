@@ -6,7 +6,7 @@ const allProducts = [
         price: 799.99,
         image: "/api/placeholder/300/200",
         category: "smartphones",
-        description: "The newest flagship smartphone with advanced camera system and all-day battery life.",
+        description: "The  smartphone with advanced camera system and all-day battery life.",
         rating: 4.8,
         inStock: true
     },
@@ -66,7 +66,7 @@ const allProducts = [
         price: 89.99,
         image: "/api/placeholder/300/200",
         category: "accessories",
-        description: "Portable Bluetooth speaker with 360° sound and waterproof design.",
+        description: "Portable Bluetooth speaker with sound and waterproof design.",
         rating: 4.4,
         inStock: true
     },

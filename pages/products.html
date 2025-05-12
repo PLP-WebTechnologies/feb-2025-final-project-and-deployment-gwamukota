@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTreasures | Products</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="../index.html" class="logo">Tech<span>Treasures</span></a>
+            <nav>
+                <button class="mobile-menu-btn">☰</button>
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Products</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon" id="cartIcon">
+               <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>All Products</h1>
+            <div class="breadcrumbs">
+                <a href="index.html">Home</a> / Products
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-container">
+                <!-- Products Sidebar Filters -->
+                <div class="products-sidebar">
+                    <div class="filter-section">
+                        <h3>Categories</h3>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" value="all" checked class="category-filter"> All
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="smartphones" class="category-filter"> Smartphones
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="laptops" class="category-filter"> Laptops
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="accessories" class="category-filter"> Accessories
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <h3>Price Range</h3>
+                        <div class="price-slider">
+                            <div class="price-inputs">
+                                <div>
+                                    <label for="min-price">Min:</label>
+                                    <input type="number" id="min-price" value="0" min="0">
+                                </div>
+                                <div>
+                                    <label for="max-price">Max:</label>
+                                    <input type="number" id="max-price" value="2000" min="0">
+                                </div>
+                            </div>
+                            <button class="btn btn-small" id="apply-price">Apply</button>
+                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <h3>Rating</h3>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" value="5" class="rating-filter"> 5 Stars
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="4" class="rating-filter"> 4+ Stars
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" value="3" class="rating-filter"> 3+ Stars
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn" id="clear-filters">Clear All Filters</button>
+                </div>
+                
+                <!-- Products Grid -->
+                <div class="products-grid-container">
+                    <div class="products-toolbar">
+                        <div class="products-count">
+                            <span id="products-count">0</span> Products found
+                        </div>
+                        <div class="products-sort">
+                            <label for="sort-select">Sort by:</label>
+                            <select id="sort-select">
+                                <option value="default">Featured</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                                <option value="name-az">Name: A to Z</option>
+                                <option value="name-za">Name: Z to A</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-grid" id="products-grid">
+                        <!-- Products added dynamically with JavaScript -->
+                    </div>
+                    <div class="pagination">
+                        <button class="pagination-btn" id="prev-page" disabled>Previous</button>
+                        <div id="pagination-numbers">
+                            <!-- Page numbers will be added dynamically -->
+                        </div>
+                        <button class="pagination-btn" id="next-page">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container newsletter-container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get notified on latest products and exclusive deals.</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>TechTreasures is your one-stop destination for all your tech needs. We provide quality products at affordable prices.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li>Email: info@techtreasures.com</li>
+                        <li>Phone: (123) 456-7890</li>
+                        <li>Address: 123 Digital City</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#">FB</a>
+                        <a href="#">TW</a>
+                        <a href="#">IG</a>
+                        <a href="#">YT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 TechTreasures. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+     <!-- Cart Modal -->
+     <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Your Cart</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cart-items">
+                    <!-- Cart items will be added dynamically -->
+                </div>
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total-price">$0.00</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+    <script src="js/script.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>

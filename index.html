@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTreasures | Home</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">Tech<span>Treasures</span></a>
+            <nav>
+                <button class="mobile-menu-btn">☰</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon" id="cartIcon">
+               <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to TechTreasures</h1>
+            <p>Find the best tech products at unbeatable prices. From smartphones to laptops, we've got everything you need.</p>
+            <a href="products.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="product-grid" id="featured-products">
+                <!-- Products will be added dynamically with JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Shop By Category</h2>
+            <div class="category-grid">
+                <a href="categories.html#smartphones" class="category-card">
+                    <img src="/api/placeholder/300/200" alt="Smartphones">
+                    <div class="category-overlay">
+                        <h3 class="category-title">Smartphones</h3>
+                    </div>
+                </a>
+                <a href="categories.html#laptops" class="category-card">
+                    <img src="/api/placeholder/300/200" alt="Laptops">
+                    <div class="category-overlay">
+                        <h3 class="category-title">Laptops</h3>
+                    </div>
+                </a>
+                <a href="categories.html#accessories" class="category-card">
+                    <img src="/api/placeholder/300/200" alt="Accessories">
+                    <div class="category-overlay">
+                        <h3 class="category-title">Accessories</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container newsletter-container">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest products and exclusive deals straight to your inbox.</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>TechTreasures is your one-stop destination for all your tech needs. We provide quality products at affordable prices.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li>Email: info@techtreasures.com</li>
+                        <li>Phone: +1 (123) 456-7890</li>
+                        <li>Address: 123 Tech St, Digital City</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#">FB</a>
+                        <a href="#">TW</a>
+                        <a href="#">IG</a>
+                        <a href="#">YT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 TechTreasures. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Your Cart</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cart-items">
+                    <!-- Cart items will be added dynamically -->
+                </div>
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total-price">$0.00</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -13,7 +13,7 @@ Develop the Categories page to be more diverse and functional
 Improve the JS code for better functionality on all pages
 Improve the Cart functionality
 Improve general site responsiveness and asthetics
-Add functionalitiy to contact form
+Add functionality to contact form
 
 
 ## Site Url
